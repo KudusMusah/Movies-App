@@ -18,6 +18,11 @@ To run the Movies App locally, follow these steps:
 3. Obtain an API key from the Movies DB API website: [https://www.themoviedb.org/documentation/api](https://www.themoviedb.org/documentation/api) or simply use the one I provided
 4. Start the development server (The app should now be running on [http://localhost:3000](http://localhost:3000))
 
+## Hosting
+
+this app is hosted on InfinityFree.net
+live url: [movie-app.infinityfreeapp.com](http://movie-app.infinityfreeapp.com/)
+
 ## API Reference
 
 This app uses the Movies DB API to fetch movie data. You can find more information about the API and its endpoints in the official documentation: [https://www.themoviedb.org/documentation/api](https://www.themoviedb.org/documentation/api)
