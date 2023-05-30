@@ -16,7 +16,7 @@ To run the Movies App locally, follow these steps:
 1. Clone the repository:
 2. Navigate to the project directory
 3. Obtain an API key from the Movies DB API website: [https://www.themoviedb.org/documentation/api](https://www.themoviedb.org/documentation/api) or simply use the one I provided
-4. 6. Start the development server (The app should now be running on [http://localhost:3000](http://localhost:3000))
+4. Start the development server (The app should now be running on [http://localhost:3000](http://localhost:3000))
 
 ## API Reference
 
