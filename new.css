@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+:root {
+    --primary-color: #22254b;
+    --secondary-color: #373b69;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .search {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    width: 200px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+header .search::placeholder {
+    color: #7378c5;
+}
+
+header .search:focus {
+    outline: none;
+    background-color: var(--primary-color);
+}
+
+header .genres ul {
+    display: flex;
+    color: white;
+    list-style-type: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+header .genres ul li {
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header .genres ul li.highlight {
+    color: #7378c5;
+}
+
+header .genres ul li:hover {
+    color: #7378c5;
+}
+
+main {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.movie-box {
+    background-color: var(--secondary-color);
+    width: 22%;
+    margin: 1rem;
+    border-radius: 4px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.movie-box img {
+    width: 100%;
+}
+
+
+
+.movie-box .movie .rating {
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.movie-box .movie .rating span {
+    background-color: var(--primary-color);
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.movie-box .movie .rating span.green {
+    color: lightgreen;
+}
+
+.movie-box .movie .rating span.orange {
+    color: orange;
+}
+
+.movie-box .movie .rating span.red {
+    color: red;
+}
+
+.movie-box .movie .rating h3 {
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.overview {
+    background-color: #fff;
+    padding: 1rem;
+    transform: translateY(101%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    transition: transform 0.6s ease;
+}
+
+.overview h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.movie-box:hover .overview {
+    transform: translateY(0);
+}
+
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+.icon {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 3px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    padding: 1rem 2rem;
+    margin: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.icon:hover {
+    box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.icon:active {
+    transform: scale(0.95);
+}
+
+.icon:focus {
+    outline: 0;
+}
+
+
+
+@media screen and (max-width: 1126px) {
+    .movie-box {
+        width: 27%;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .movie-box {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .movie-box {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 716px) {
+    .genres {
+        display: none;
+    }
+
+    header {
+        justify-content: flex-end;
+    }
+}
